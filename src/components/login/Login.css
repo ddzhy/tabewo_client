@@ -1,0 +1,136 @@
+/* LoginComponent.css */
+
+/* Reset some default styling */
+body, ul, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 전체 배경색 설정 */
+body {
+    background-color: #fff9d4; /* Light yellow background */
+}
+
+/* 로그인 컨테이너 스타일 */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff9d4; /* Light yellow background for consistency */
+}
+
+/* 로그인 박스 스타일 */
+.login-box {
+    background-color: #fff; /* White background for contrast */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* 로그인 헤더 스타일 */
+.login-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.header-icon {
+    position: absolute; /* Allow absolute positioning */
+    top: 10px; /* Distance from the top */
+    left: 10px; /* Distance from the left */
+    font-size: 24px;
+    cursor: pointer;
+    color: #333; /* Dark color for icon */
+}
+
+/* 제목 스타일 */
+.login-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 입력 그룹 스타일 */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* 비밀번호 아이콘 컨테이너 */
+.input-container {
+    position: relative;
+}
+
+.password-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #333;
+}
+
+/* 오류 텍스트 스타일 */
+.error-text {
+    color: #d9534f; /* Red for error message */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* 로그인 버튼 스타일 */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd700; /* Darker yellow for button */
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #ffca00; /* Slightly darker shade on hover */
+}
+
+/* 약관 텍스트 스타일 */
+.terms-text {
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* 회원가입 링크 스타일 */
+.signup-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    text-decoration: underline;
+}
