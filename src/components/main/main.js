@@ -23,6 +23,7 @@ const HomePage = () => {
                         <li><a href="/annae">안내</a></li>
                         <li><a href="/workmate">워크메이트</a></li>
                         <li><a href="/workcontainer">워크컨테이너</a></li>
+                        <li><a href="/blog">게시판</a></li>
                         {isLoggedIn ? <li><Link to="/mypage">마이페이지</Link></li> : <li><Link to="/login">로그인</Link></li>}
                         </ul>
                 </nav>
