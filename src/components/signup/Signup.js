@@ -45,7 +45,7 @@ function Signup() {
             }
         } else {
             setIsLoading(true); // 회원가입 요청 시작 시 로딩 상태로 전환
-            axios.post(`http://localhost:8081/signup`, values)
+            axios.post(`https://tabewo-server.vercel.app/signup`, values)
                 .then(res => {
                     navigate('/login');
                     console.log(res)

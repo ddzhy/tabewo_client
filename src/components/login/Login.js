@@ -37,7 +37,7 @@ function Login() {
     
         if (!validationErrors.email && !validationErrors.password) {
             setIsLoading(true);
-            axios.post(`http://localhost:8081/login`, values)
+            axios.post(`https://tabewo-server.vercel.app/login`, values)
                 .then(res => {
                     if (res.data === "Success") {
                         login(); 

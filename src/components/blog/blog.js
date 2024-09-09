@@ -8,7 +8,7 @@ function Blog() {
     const navigate = useNavigate();
 
     const boardUpdate = () => {
-        Axios.get('http://localhost:8081/api/get')
+        Axios.get('https://tabewo-server.vercel.app/api/get')
             .then((res) => {
                 setViewContent(res.data);
             });
@@ -21,7 +21,7 @@ function Blog() {
     const deletePost = (id) => {
         const confirmDelete = window.confirm("정말로 이 게시물을 삭제하시겠습니까?");
         if (confirmDelete) {
-            Axios.delete(`http://localhost:8081/api/delete/${id}`)
+            Axios.delete(`https://tabewo-server.vercel.app/api/delete/${id}`)
                 .then(() => {
                     boardUpdate();
                 });
@@ -46,7 +46,7 @@ function Blog() {
                                 <p className="listIndex">{index + 1}</p>
                                 <p className="listDate">{post.date}</p>
                             </div>
-                            {post.image && <img src={`http://localhost:8081${post.image}`} alt="Post" />} {/* 이미지 표시 */}
+                            {post.image && <img src={`https://tabewo-server.vercel.app/${post.image}`} alt="Post" />} {/* 이미지 표시 */}
                             <p className="listTitle">{post.title}</p>
                             <p className="listContent">{post.content}</p>
                             <div className="buttonContainer">

@@ -13,7 +13,7 @@ const Mypage = () => {
       // 서버로부터 사용자 데이터를 가져오는 함수
       const fetchUserData = async () => {
         try {
-          const response = await axios.get('http://localhost:8081/mypage', {
+          const response = await axios.get('https://tabewo-server.vercel.app/mypage', {
             withCredentials: true, // 쿠키를 포함한 요청
           });
           

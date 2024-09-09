@@ -22,7 +22,7 @@ function BlogAdd() {
             formData.append('image', image); // 이미지 파일 추가
         }
 
-        Axios.post('http://localhost:8081/api/insert', formData, {
+        Axios.post('https://tabewo-server.vercel.app/api/insert', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }

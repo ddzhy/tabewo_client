@@ -13,7 +13,7 @@ function BlogEdit() {
     });
 
     const updatePost = () => {
-        Axios.put('http://localhost:8081/api/update', {
+        Axios.put('https://tabewo-server.vercel.app/api/update', {
             id: boardContent.id,
             title: boardContent.title,
             content: boardContent.content
